@@ -1,5 +1,80 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+
+## Local Storage
+
+```bash
+npm install @react-native-async-storage/async-storage
+```
+
+## model API
+
+```bash
+https://jsonplaceholder.typicode.com
+```
+## API
+```bash
+npm install axios
+```
+
+
+## Debug and Release APK
+# Debug APK
+# How to generate one in 3 steps?
+Step 1: Go to the root of the project in the terminal and run the below command:<br />
+```bash
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+```
+Step 2: Go to android directory:<br />
+```bash
+cd android
+```
+Step 3: Now in this android folder, run this command<br />
+```bash
+./gradlew assembleDebug
+```
+
+There! you’ll find the apk file in the following path:< br/>
+```bash
+yourProject/android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+## Screen Navigation
+
+```bash
+npm install @react-navigation/native @react-navigation/native-stack
+npm install react-native-screens react-native-safe-area-context
+```
+
+## 4 part of screen
+
+Step 1. Import libraries to create componets.<br />
+Step 2. Create a component that return some jsx / simple function.<br />
+Step 3. Create a StyleSheet to style the component.<br />
+Step 4. Export the file, so that we can use it elsewhere in our app.
+
+## How to conver App.tsx to App.js
+
+Step 1: Rename App.tsx file to App.js. <br />
+Step 2: Delete tsconfig.json file. <br />
+Step 3: Remove typescript library in package.json file.
+type command on terminal
+```bash
+npm uninstall typescript
+```
+
+## Linear Gradient
+
+```bash
+npm i react-native-linear-gradient
+```
+
+## Create new project
+
+```bash
+npm install npm -g
+npx react-native@latest init <Project_Name>
+```
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
